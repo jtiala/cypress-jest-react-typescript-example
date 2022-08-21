@@ -1,0 +1,14 @@
+.button {
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: transparent;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.button:hover,
+.button:active {
+  background-color: white;
+  color: #282c34;
+}

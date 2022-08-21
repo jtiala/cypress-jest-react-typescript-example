@@ -1,0 +1,56 @@
+{
+  "name": "cypress-jest-react-typescript-example",
+  "version": "0.1.0",
+  "dependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.49",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "cypress": "^10.6.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.7.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "jest:run": "react-scripts test --watchAll false",
+    "jest:watch": "react-scripts test",
+    "cypress:run": "npm run cypress:run:e2e && npm run cypress:run:component",
+    "cypress:run:e2e": "cypress run --e2e",
+    "cypress:run:component": "cypress run --component",
+    "cypress:open": "cypress open",
+    "test": "npm run jest:run && npm run cypress:run",
+    "lint": "eslint '**/*.{ts,tsx}'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:cypress/recommended"
+    ],
+    "plugins": [
+      "cypress"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
