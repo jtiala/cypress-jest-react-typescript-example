@@ -29,6 +29,3 @@ describe("app view", () => {
     cy.getByTestId("increase-button").should("contain.text", "Click me");
   });
 });
-
-// `export` makes sure that TypeScript handles the file as external module
-export {};

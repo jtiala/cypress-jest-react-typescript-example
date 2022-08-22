@@ -23,5 +23,5 @@ declare global {
   }
 }
 
-// export makes sure that TypeScript handles the file as external module
+// if this file doesn't `import` anything, an empty `export` is needed to make TypeScript handle the file as external module
 export {};
